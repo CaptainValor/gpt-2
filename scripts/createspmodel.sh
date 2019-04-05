@@ -9,7 +9,7 @@ then
   exit 1
 fi
 
-if [ -z "$(which spm_train)" ]
+if [ -z "$(!which spm_train)" ]
 then
   echo "Please download, build and install Sentence Piece from https://github.com/google/sentencepiece"
   exit 2
